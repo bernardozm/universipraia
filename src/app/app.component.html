@@ -3,22 +3,45 @@
     <div class="container justify-content-center">8 é par</div>
   </a> -->
   <div class="mx-auto order-0">
-    <a class="navbar-brand mx-auto" href="#">Universipraia 2k21</a>
+    <a class="navbar-brand mx-auto" href="#">Uni 2k21</a>
   </div>
 </nav>
-<div class="container">
-  <div class="mt-4">
-    <h2>
-      É um prazer tê-la aqui! Se você chegou até aqui, agora ficou fácil achar
-      quem estava procurando.
-    </h2>
+
+<div class="containeir-fluid text-center" style="background-color: #212529">
+  <ngb-carousel
+    [showNavigationArrows]="false"
+    [showNavigationIndicators]="false"
+    [keyboard]="true"
+    [pauseOnHover]="false"
+  >
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src=".\assets\slideesqeuntaafter.png" alt="Angular Carousel 1" />
+      </div>
+      <!-- <div class="carousel-caption">
+        <h1>After</h1> -->
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <!-- </div> -->
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src=".\assets\slideintegracao.png" alt="Angular Carousel 2" />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="container" style="background-color: rgb(0, 0, 0)">
+  <div class="text-center pt-3" style="color: white">
+    <h4>É um prazer tê-la aqui!</h4>
+    <h5>Agora ficou facil achar quem você estava procurando.</h5>
+    <h5>Arrasta pra cima!</h5>
   </div>
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="col-auto">
       <div class="card text-center mt-5" style="width: 18rem">
         <img
           class="card-img-top"
-          src=".\assets\instabernardo.png"
+          src=".\assets\instabernardored.png"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -43,12 +66,29 @@
         />
         <div class="card-body">
           <h5 class="card-title">@brunomoritzd</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <p class="card-text mb-0">Durateston</p>
+          <p class="card-text">Eng. Civil</p>
           <a
             href="https://www.instagram.com/brunomoritzd/"
+            class="btn btn-primary stretched-link"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card mt-5 text-center" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src=".\assets\jonys.jpeg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">@joaogtrindade</h5>
+          <p class="card-text mb-0">Casado</p>
+          <p class="card-text">Odonto</p>
+          <a
+            href="https://www.instagram.com/joaogtrindade/"
             class="btn btn-primary stretched-link"
             >Instagram</a
           >
